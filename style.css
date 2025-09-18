@@ -85,6 +85,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
@@ -98,6 +99,12 @@ section {
   text-decoration: none;
   color: #ffeb3b;
   font-weight: bold;
+}
+
+/* Hover efecto en proyectos */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 /* Tecnologías */
@@ -114,6 +121,13 @@ section {
   height: 60px;
   object-fit: contain;
   filter: drop-shadow(0 2px 5px rgba(0,0,0,0.6));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover efecto en tecnologías */
+.tech-icons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 /* Contacto */
